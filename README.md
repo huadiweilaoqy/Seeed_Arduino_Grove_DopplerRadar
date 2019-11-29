@@ -66,3 +66,7 @@ This library Grove DopplerRadar.
 - You can set I/Q ADC mode using the setMode (1) function.This pattern retrieves I/Q information.
 
 - You can use the setSpeedScope(2000, 0) function to set the detection speed range, and use getSpeedScope(&maxspeed, &minspeed) to see the detection speed range.
+
+- You can set the DopplerRadar detection threshold using the setThreshold(1024) function and get the detection threshold using the getThreshold() function.
+
+- The examples above are in the examples folder.
