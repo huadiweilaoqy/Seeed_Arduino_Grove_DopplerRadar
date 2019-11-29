@@ -4,11 +4,11 @@ This library Grove DopplerRadar.
 
 ### Software usage  
 
--Install Seeed Arduino Grove DopplerRadar library to Arduino.  
+- Install Seeed Arduino Grove DopplerRadar library to Arduino.  
 
--Start a project.  
+- Start a project.  
 
--You can choose to use the hardware or software serial port.
+- You can choose to use the hardware or software serial port.
   ```
       #ifdef __AVR__
       #include <SoftwareSerial.h>
@@ -35,11 +35,11 @@ This library Grove DopplerRadar.
 
   ```
 
--Set the communication baud rate of the DopplerRadar module (115200).
+- Set the communication baud rate of the DopplerRadar module (115200).
 
--Then initialize GBT in the setup function.
+- Then initialize GBT in the setup function.
 
--Set the working mode.
+- Set the working mode.
   ```
   void setup()
   {
@@ -62,8 +62,8 @@ This library Grove DopplerRadar.
   
   ```
   
--You can use the getSpeed() function and the getTargetState() function to get the speed and target state.
+- You can use the getSpeed() function and the getTargetState() function to get the speed and target state.
 
--You can set I/Q ADC mode using the setMode (1) function.This pattern retrieves I/Q information.
+- You can set I/Q ADC mode using the setMode (1) function.This pattern retrieves I/Q information.
 
 
