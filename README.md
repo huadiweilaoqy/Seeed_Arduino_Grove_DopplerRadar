@@ -54,7 +54,6 @@ This library Grove DopplerRadar.
     /*
      * MODE 0 -->detection target mode
      * MODE 1 -->I/Q ADC mode
-     * 
      */
     while (!GBT.setMode(0))
       ;
@@ -66,4 +65,4 @@ This library Grove DopplerRadar.
 
 - You can set I/Q ADC mode using the setMode (1) function.This pattern retrieves I/Q information.
 
-
+- You can use the setSpeedScope(2000, 0) function to set the detection speed range, and use getSpeedScope(&maxspeed, &minspeed) to see the detection speed range.
