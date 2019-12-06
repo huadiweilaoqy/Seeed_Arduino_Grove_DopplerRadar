@@ -2,7 +2,13 @@
 
 This library Grove DopplerRadar.
 
-### Software usage  
+## Hardware requirements
+
+- Arduino Zero
+- Grove Shield and a cable
+- Grove DopplerRadar(BGT24LTR11)
+
+## Software usage  
 
 - Install Seeed Arduino Grove DopplerRadar library to Arduino.  
 
