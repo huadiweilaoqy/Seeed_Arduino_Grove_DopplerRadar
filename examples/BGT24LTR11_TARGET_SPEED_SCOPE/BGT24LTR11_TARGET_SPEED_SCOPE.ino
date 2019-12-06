@@ -36,7 +36,7 @@ void setup() {
   */
   GBT.setMode(0);
   //Set the speed detection range
-  while (!GBT.setSpeedScope(2000, 0));
+  while (!GBT.setSpeedScope(512, 0));
 }
 
 void loop() {
