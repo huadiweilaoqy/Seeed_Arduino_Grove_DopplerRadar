@@ -10,7 +10,7 @@ This library Grove DopplerRadar.
 <img src=img/DopplerRadar.jpg width=300 height=200> 
 
 #### connection of the hardware
-<img src=img/connect.jpg width=800> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src=img/connect.jpg width=300 height=200> 
 Connect DopplerRadar to the serial port of the board.In this example, we use hardware serial as the serial port; If you have other software Serial ports on you board, you can also connect to it.But software serial port may cause data loss.
 
 ###  Usage
