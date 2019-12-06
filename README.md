@@ -7,10 +7,17 @@ This library Grove DopplerRadar.
 - Arduino Zero
 - Grove Shield and a cable
 - Grove DopplerRadar(BGT24LTR11)
+<img src=img/DopplerRadar.jpg width=300 height=200> 
 
-## Software usage  
+#### connection of the hardware
+<img src=img/connect.jpg width=800 height=400> 
+Connect DopplerRadar to the serial port of the board.In this example, we use hardware serial as the serial port; If you have other software Serial ports on you board, you can also connect to it.But software serial port may cause data loss.
 
-- Install Seeed Arduino Grove DopplerRadar library to Arduino.  
+###  Usage
+
+- Git clone this resp to your Arduino IDE'S libraries directory.
+
+- Run the demo "BGT24LTR11_DETECTION_TARGET" on examples directory.
 
 - Start a project.  
 
@@ -66,13 +73,27 @@ This library Grove DopplerRadar.
   }
   
   ```
-  
-- You can use the getSpeed() function and the getTargetState() function to get the speed and target state.
+###Methods
 
-- You can set I/Q ADC mode using the setMode (1) function.This pattern retrieves I/Q information.
+- uint16_t getSpeed();
 
-- You can use the setSpeedScope(2000, 0) function to set the detection speed range, and use getSpeedScope(&maxspeed, &minspeed) to see the detection speed range.
+- uint16_t getTargetState();
 
-- You can set the DopplerRadar detection threshold using the setThreshold(1024) function and get the detection threshold using the getThreshold() function.
+- uint8_t getIQADC(uint16_t I_d[],uint16_t Q_d[],uint16_t *len);
 
-- The examples above are in the examples folder.
+- uint8_t setSpeedScope(uint16_t maxspeed,uint16_t minspeed);
+
+- uint8_t getSpeedScope(uint16_t *maxspeed,uint16_t *minspeed);
+
+- uint8_t setMode(uint16_t mode);
+	- mode 0 :detect the target mode.
+	- mode 1 :Gets the I/Q information ADC value mode.
+
+	
+- uint8_t getMode();
+
+- uint8_t setThreshold(uint16_t whreshold);
+
+- uint16_t getThreshold();
+
+

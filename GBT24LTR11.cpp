@@ -15,6 +15,7 @@ void GBT24LTR11<T>::init(T &serialPort)
 template <class T>
 uint16_t GBT24LTR11<T>::getSpeed()
 {
+	
     uint16_t data[7] = {0};
     _serial->write(commandC1, 7);
     while (_serial->available() > 0)
@@ -29,7 +30,9 @@ uint16_t GBT24LTR11<T>::getSpeed()
                     {
                         data[i] = _serial->read();
                     }
+
                     return (data[2] * 256 + data[3]);
+
                 }
             }
         }
